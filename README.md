@@ -5,12 +5,19 @@ _Author: Amy Wooding_
 Welcome to the [easydata-tutorial] repo! If you're attending the Pydata Global Tutorial, "[Love your (data science) Neighbour: Reproducible Data Science the Easydata Way][pydata-global-talk]", you're in the right place!
 
 You're about to embark on the **Easydata Quest for Reproducibility**. In preparation, you'll need to get your tools ready. In particular, you will need to have the following basic requirements installed on your machine:
+* conda >= 4.8 (via Anaconda or Miniconda)
 * python >= 3.6
 * GNU make
-* conda >= 4.8 (via Anaconda or Miniconda)
 * git
 
-Many systems have `git` and `make` pre-installed. If not, we recommend using `conda` to install `make`. Windows can be especially gnarly. We have [Windows specific setup instructions](reference/easydata/windows-install.md).
+Note that once conda is installed, you can easily use it to install python, make, and even git, if need be; e.g. by doing a:
+
+```
+>>> conda create -n easydata python=3 make git
+>>> conda activate easydata
+```
+
+Windows setup can be especially gnarly. We have [Windows specific setup instructions](reference/easydata/windows-install.md).
 
 To test if you're ready, run:
 ```
